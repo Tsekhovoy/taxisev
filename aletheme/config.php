@@ -43,6 +43,8 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+
+
     $options[] = array( 'name' => "Manage Background",
                         'desc' => "Select the background color, or upload a custom background image. Default background is the #f5f5f5 color",
                         'id' => 'ale_background',
@@ -98,77 +100,166 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "text");
 
+    $options[] = array("name" => "Header Options",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Call to action Title",
+                        "desc" => "Insert the call to action text",
+                        "id" => "ale_calltoaction",
+                        "std" => "Call us any time",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Call Number 1",
+                        "desc" => "Insert the call number",
+                        "id" => "ale_callnumber1",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Call Number 2",
+                        "desc" => "Insert the call number",
+                        "id" => "ale_callnumber2",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Call Number 3",
+                        "desc" => "Insert the call number",
+                        "id" => "ale_callnumber3",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Location 1",
+                        "desc" => "Insert the location",
+                        "id" => "ale_location1",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Location 2",
+                        "desc" => "Insert the location",
+                        "id" => "ale_location2",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Location 3",
+                        "desc" => "Insert the location",
+                        "id" => "ale_location3",
+                        "std" => "",
+                        "type" => "text");
+
     $options[] = array( "name" => "Typography",
                         "type" => "heading");
 
-    $options[] = array( "name" => "Select the body Font from Google Library",
-                        "desc" => "The default Font is - Raleway",
-                        "id" => "ale_headerfont",
-                        "std" => "Raleway",
+    $options[] = array( "name" => "Select the Font One from Google Library",
+                        "desc" => "The default Font is - Questrial",
+                        "id" => "ale_font_one",
+                        "std" => "Questrial",
                         "type" => "select",
                         "options" => $headerfont);
 
-    $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 600",
-                        "id" => "ale_headerfontex",
-                        "std" => "600",
+    $options[] = array( "name" => "Select the Font One (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - ",
+                        "id" => "ale_font_one_ex",
+                        "std" => "",
                         "type" => "text",
                         );
 
-    $options[] = array( "name" => "Select the Headers Font from Google Library",
-                        "desc" => "The default Font is - Libre Baskerville",
-                        "id" => "ale_mainfont",
-                        "std" => "Libre+Baskerville",
+    $options[] = array( "name" => "Select the Font Two from Google Library",
+                        "desc" => "The default Font is - Pacifico",
+                        "id" => "ale_font_two",
+                        "std" => "Pacifico",
                         "type" => "select",
                         "options" => $headerfont);
 
-    $options[] = array( "name" => "Select the Headers Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 400,400italic",
-                        "id" => "ale_mainfontex",
-                        "std" => "400,400italic",
+    $options[] = array( "name" => "Select the Font Two (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - ",
+                        "id" => "ale_font_two_ex",
+                        "std" => "",
                         "type" => "text",
                         );
+
+    $options[] = array( "name" => "Select the Font Three from Google Library",
+                        "desc" => "The default Font is - Playfair Display",
+                        "id" => "ale_font_three",
+                        "std" => "Playfair+Display",
+                        "type" => "select",
+                        "options" => $headerfont);
+
+    $options[] = array( "name" => "Select the Font Three (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - 400,700,700italic",
+                        "id" => "ale_font_three_ex",
+                        "std" => "400,700,700italic",
+                        "type" => "text",
+                    );
+
+    $options[] = array( "name" => "Select the Font Four from Google Library",
+                        "desc" => "The default Font is - Rufina",
+                        "id" => "ale_font_four",
+                        "std" => "Rufina",
+                        "type" => "select",
+                        "options" => $headerfont);
+
+    $options[] = array( "name" => "Select the Font Four (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - ",
+                        "id" => "ale_font_four_ex",
+                        "std" => "",
+                        "type" => "text",
+                    );
+
+    $options[] = array( "name" => "Select the Font Five from Google Library",
+                        "desc" => "The default Font is - Dancing Script",
+                        "id" => "ale_font_five",
+                        "std" => "Dancing+Script",
+                        "type" => "select",
+                        "options" => $headerfont);
+
+    $options[] = array( "name" => "Select the Font Five (Extended) from Google Library",
+                        "desc" => "The default Font (extended) is - ",
+                        "id" => "ale_font_five_ex",
+                        "std" => "",
+                        "type" => "text",
+                    );
+
+
 
     $options[] = array( 'name' => "H1 Style",
                         'desc' => "Change the h1 style",
                         'id' => 'ale_h1sty',
-                        'std' => array('size' => '22px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '22px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H2 Style",
                         'desc' => "Change the h2 style",
                         'id' => 'ale_h2sty',
-                        'std' => array('size' => '20px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '20px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H3 Style",
                         'desc' => "Change the h3 style",
                         'id' => 'ale_h3sty',
-                        'std' => array('size' => '18px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '18px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H4 Style",
                         'desc' => "Change the h4 style",
                         'id' => 'ale_h4sty',
-                        'std' => array('size' => '16px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '16px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H5 Style",
                         'desc' => "Change the h5 style",
                         'id' => 'ale_h5sty',
-                        'std' => array('size' => '14px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '14px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "H6 Style",
                         'desc' => "Change the h6 style",
                         'id' => 'ale_h6sty',
-                        'std' => array('size' => '12px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#111111'),
                         'type' => 'typography');
 
     $options[] = array( 'name' => "Body Style",
                         'desc' => "Change the body font style",
                         'id' => 'ale_bodystyle',
-                        'std' => array('size' => '11px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#898989'),
                         'type' => 'typography');
 
 	$options[] = array( "name" => "Social",

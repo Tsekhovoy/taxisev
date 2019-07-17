@@ -1,7 +1,17 @@
 <?php
 $ale_background = ale_get_option('background');
-$ale_headerfont = ale_get_option('headerfont');
-$ale_mainfont = ale_get_option('mainfont');
+$ale_font_one = ale_get_option('font_one');
+$ale_font_two = ale_get_option('font_two');
+$ale_font_three = ale_get_option('font_three');
+$ale_font_four = ale_get_option('font_four');
+$ale_font_five = ale_get_option('font_five');
+
+$ale_font_one_ex = ale_get_option('font_one_ex');
+$ale_font_two_ex = ale_get_option('font_two_ex');
+$ale_font_three_ex = ale_get_option('font_three_ex');
+$ale_font_four_ex = ale_get_option('font_four_ex');
+$ale_font_five_ex = ale_get_option('font_five_ex');
+
 $ale_font = ale_get_option('bodystyle');
 $ale_h1 = ale_get_option('h1sty');
 $ale_h2 = ale_get_option('h2sty');
@@ -11,10 +21,64 @@ $ale_h5 = ale_get_option('h5sty');
 $ale_h6 = ale_get_option('h6sty');
 ?>
 <?php
+/*
     if(ale_get_option('headerfontex')){ $headerfontex = ":".ale_get_option('headerfontex'); } else {$headerfontex =""; }
     if(ale_get_option('mainfontex')){ $mainfontex = ":".ale_get_option('mainfontex'); } else {$mainfontex = "";}
     if(ale_get_option('headerfont')){ echo "<link href='http://fonts.googleapis.com/css?family=".ale_get_option('headerfont').$headerfontex."|".ale_get_option('mainfont').$mainfontex."' rel='stylesheet' type='text/css'>"; }
+
+*/
+if ($ale_font_one) {
+  if ($ale_font_one_ex) {
+    $ale_font_one_ex = ":".$ale_font_one_ex;
+  } else {
+    $ale_font_one_ex = '';
+  }
+  echo "<link href=\'https://fonts.googleapis.com/css?family=".$ale_font_one.$ale_font_one_ex."' rel=\'stylesheet\'>";
+
+}
+
+if ($ale_font_two) {
+    if ($ale_font_two_ex) {
+        $ale_font_two_ex = ":".$ale_font_two_ex;
+    } else {
+        $ale_font_two_ex = '';
+    }
+    echo "<link href=\'https://fonts.googleapis.com/css?family=".$ale_font_two.$ale_font_two_ex."' rel=\'stylesheet\'>";
+
+}
+
+if ($ale_font_three) {
+    if ($ale_font_three_ex) {
+        $ale_font_three_ex = ":".$ale_font_three_ex;
+    } else {
+        $ale_font_three_ex = '';
+    }
+    echo "<link href=\'https://fonts.googleapis.com/css?family=".$ale_font_three.$ale_font_three_ex."' rel=\'stylesheet\'>";
+
+}
+
+if ($ale_font_four) {
+    if ($ale_font_four_ex) {
+        $ale_font_four_ex = ":".$ale_font_four_ex;
+    } else {
+        $ale_font_four_ex = '';
+    }
+    echo "<link href=\'https://fonts.googleapis.com/css?family=".$ale_font_four.$ale_font_four_ex."' rel=\'stylesheet\'>";
+
+}
+
+if ($ale_font_five) {
+    if ($ale_font_five_ex) {
+        $ale_font_five_ex = ":".$ale_font_five_ex;
+    } else {
+        $ale_font_five_ex = '';
+    }
+    echo "<link href=\'https://fonts.googleapis.com/css?family=".$ale_font_five.$ale_font_five_ex."' rel=\'stylesheet\'>";
+
+}
 ?>
+
+
 <style type='text/css'>
     body {
         <?php

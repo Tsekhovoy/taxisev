@@ -63,7 +63,6 @@ function ale_init_navigation() {
 			'header_left_menu'	=> __('Header Left Menu', 'aletheme'),
             'header_right_menu'	=> __('Header Right Menu', 'aletheme'),
             'footer_menu'	=> __('Footer Menu', 'aletheme'),
-            'aboutpage_menu'	=> __('About Page Menu', 'aletheme'),
             'mobile_menu'	=> __('Mobile Menu', 'aletheme'),
 		));
 	}
