@@ -2262,13 +2262,27 @@ footer .bottom-line {
   font-size: 11px;
   position: relative;
 }
+footer .bottom-line .footermenu {
+  display: inline-block;
+  list-style: none;
+}
+footer .bottom-line .footermenu li {
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #000;
+}
 footer .bottom-line .dot {
-  margin: 0 12px;
+  display: inline-block;
   background: #000;
+  margin-right: 18px;
   height: 4px;
   width: 4px;
   border-radius: 50%;
   vertical-align: middle;
+}
+footer .bottom-line .dot:first-child {
+  display: none;
 }
 footer .bottom-line a {
   color: #000;
@@ -2280,9 +2294,6 @@ footer .bottom-line a {
 }
 footer .bottom-line a:hover {
   opacity: 0.7;
-}
-footer .bottom-line .dot {
-  display: inline-block;
 }
 /* Services
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */

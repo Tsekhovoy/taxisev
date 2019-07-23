@@ -1853,13 +1853,30 @@ footer {
     font-size: 11px;
     position: relative;
 
+    .footermenu {
+      display: inline-block;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-left: 6px;
+        margin-right: 6px;
+        color: #000;
+      }
+    }
+
     .dot {
-      margin: 0 12px;
-      background: #000;
-      height: 4px;
-      width: 4px;
-      border-radius: 50%;
-      vertical-align: middle;
+      display: inline-block;
+        background: #000;
+        margin-right: 18px;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+
+        vertical-align: middle;
+      &:first-child {
+        display: none;
+      }
     }
 
     a {
@@ -1876,7 +1893,7 @@ footer {
     }
 
     .dot {
-      display: inline-block;
+      //display: inline-block;
     }
   }
 }

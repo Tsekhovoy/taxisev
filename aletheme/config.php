@@ -82,11 +82,6 @@ function aletheme_get_options() {
 						"std" => "1",
 						"type" => "checkbox");
 
-    $options[] = array( "name" => "Copyrights",
-                        "desc" => "Your copyright message.",
-                        "id" => "ale_copyrights",
-                        "std" => "",
-                        "type" => "editor");
 
     $options[] = array( "name" => "Home Page Slider slug",
                         "desc" => "Insert the slider slug. Get the slug on Sliders Section",
@@ -142,6 +137,45 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Location 3",
                         "desc" => "Insert the location",
                         "id" => "ale_location3",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array("name" => "Footer Options",
+                       "type" => "heading");
+
+    $options[] = array( "name" => "Footer Description",
+                        "desc" => "Insert the description",
+                        "id" => "ale_footer_description",
+                        "std" => "",
+                        "type" => "editor");
+
+    $options[] = array( "name" => "Copyrights",
+                        "desc" => "Your copyright message.",
+                        "id" => "ale_copyrights",
+                        "std" => "",
+                        "type" => "editor");
+
+    $options[] = array( "name" => "Footer Call Number",
+                        "desc" => "Insert the call number",
+                        "id" => "ale_footer_callnumber",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Footer Call Us",
+                        "desc" => "Insert the call text that appear in the footer after the call number.",
+                        "id" => "ale_footer_callus",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Footer Address Label",
+                        "desc" => "Insert the address label.",
+                        "id" => "ale_footer_address_label",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Footer Address",
+                        "desc" => "Insert the address.",
+                        "id" => "ale_footer_address",
                         "std" => "",
                         "type" => "text");
 
@@ -263,7 +297,7 @@ function aletheme_get_options() {
                         'type' => 'typography');
 
 	$options[] = array( "name" => "Social",
-						"type" => "heading");
+						          "type" => "heading");
 
     $options[] = array( "name" => "Twitter",
                         "desc" => "Your twitter profile URL.",
@@ -271,33 +305,15 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "text");
 	$options[] = array( "name" => "Facebook",
-						"desc" => "Your facebook profile URL.",
-						"id" => "ale_fb",
-						"std" => "",
-						"type" => "text");
-    $options[] = array( "name" => "Google+",
-                        "desc" => "Your google+ profile URL.",
-                        "id" => "ale_gog",
+                        "desc" => "Your facebook profile URL.",
+                        "id" => "ale_fb",
                         "std" => "",
                         "type" => "text");
-    $options[] = array( "name" => "Pinterest",
-                        "desc" => "Your pinteres profile URL.",
-                        "id" => "ale_pint",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Flickr",
-                        "desc" => "Your flickr profile URL.",
-                        "id" => "ale_flickr",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Linkedin",
-                        "desc" => "Your linked profile URL.",
-                        "id" => "ale_linked",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Instagram",
-                        "desc" => "Your instagram profile URL.",
-                        "id" => "ale_insta",
+
+
+    $options[] = array( "name" => "Youtube",
+                        "desc" => "Your youtube profile URL.",
+                        "id" => "ale_you",
                         "std" => "",
                         "type" => "text");
     $options[] = array( "name" => "Email",
