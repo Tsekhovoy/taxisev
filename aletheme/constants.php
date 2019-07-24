@@ -127,4 +127,5 @@ foreach(array('etc', 'functions', 'widgets', 'metaboxes', 'help', 'sliders', 'sh
         if(!empty($filename))
             require_once $filename;
     }
+
 }

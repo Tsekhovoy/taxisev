@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php /* ?>
+
 <h1>It's Index Page</h1>
 <br><br>
     <!-- Content -->
@@ -121,4 +123,68 @@
         </div>
 
     </div>
+
+
+ <?php */?>
+
+  <!-- Content -->
+  <div class="wrap">
+    <section class="content">
+
+      <h2><?php _e('Our Blog', 'aletheme');?></h2>
+
+      <?php if (function_exists('get_breadcrumbs)') ) {
+        echo get_breadcrumbs();}
+      else { ?>
+
+      <div class="breadcrumb">
+        <a href="<?php echo get_home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a>
+        <div class="line"></div>
+        <a href="<?php get_the_permalink();?>"><?php _e('Blog','aletheme');?></a>
+      </div>
+      <?php }
+      ?>
+
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php ale_part('postpreview' );?>
+        <?php endwhile; else: ?>
+            <?php ale_part('notfound')?>
+        <?php endif; ?>
+
+
+    </section>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <div class="wrap">
+      <div class="col-1 left_link_pag">
+<!--        <a href="#" class="left"></a>-->
+        <?php echo get_previous_posts_link();?>
+      </div>
+      <div class="col-10">
+        <!--
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">11</a>
+        <a href="#">12</a>
+        <a href="#" class="dots">...</a>
+        <a href="#">55</a>
+        -->
+        <?php ale_page_links();?>
+      </div>
+      <div class="col-1 right_link_pag">
+<!--        <a href="#" class="right"></a>-->
+        <?php echo get_next_posts_link();?>
+      </div>
+    </div>
+  </div>
 <?php get_footer(); ?>

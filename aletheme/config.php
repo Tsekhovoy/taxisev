@@ -928,9 +928,9 @@ function aletheme_get_images_sizes() {
         ),
         'post' => array(
             array(
-                'name'      => 'post-thumba',
-                'width'     => 475,
-                'height'    => 295,
+                'name'      => 'post-blogsize',
+                'width'     => 326,
+                'height'    => 193,
                 'crop'      => true,
             ),
             array(

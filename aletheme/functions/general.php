@@ -180,7 +180,8 @@ function ale_page_links() {
 		'total' => $wp_query->max_num_pages,
 		'current' => $current,
 		'show_all' => true,
-		'type' => 'list',
+		'type' => 'plain',
+		'prev_next' => false,
 		'next_text' => 'Следующие посты',
 		'prev_text' => 'Предыдущие посты'
 		);
@@ -1466,3 +1467,5 @@ function aletheme_register_required_plugins() {
     tgmpa( $plugins, $config );
 
 }
+
+
