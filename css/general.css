@@ -1101,11 +1101,13 @@ body.all section.content > h2:before {
 body.all section.content > h2:after {
   right: 50px;
 }
-body.all section.content .breadcrumb {
+body.all section.content .breadcrumb,
+body.all section.content .breadcrumbs {
   text-align: center;
   padding: 25px 0;
 }
-body.all section.content .breadcrumb a {
+body.all section.content .breadcrumb a,
+body.all section.content .breadcrumbs a {
   display: inline-block;
   font-size: 12px;
   font-family: 'Rufina', serif;
@@ -1114,10 +1116,12 @@ body.all section.content .breadcrumb a {
   text-decoration: none;
   line-height: 1.2;
 }
-body.all section.content .breadcrumb a:first-of-type {
+body.all section.content .breadcrumb a:first-of-type,
+body.all section.content .breadcrumbs a:first-of-type {
   text-decoration: underline;
 }
-body.all section.content .breadcrumb .line {
+body.all section.content .breadcrumb .line,
+body.all section.content .breadcrumbs .line {
   display: inline-block;
   background: url("images/breadcrumb.png") no-repeat center;
   height: 15px;
@@ -1126,7 +1130,8 @@ body.all section.content .breadcrumb .line {
   margin: 0 8px;
   border-bottom: 0;
 }
-body.all section.content .breadcrumb .line.back {
+body.all section.content .breadcrumb .line.back,
+body.all section.content .breadcrumbs .line.back {
   webkit-transform: rotate(180deg);
   /* Safari and Chrome */
   -moz-transform: rotate(180deg);
@@ -3246,6 +3251,20 @@ body.blog .pagination .left_link_pag a {
 body.blog .pagination .left_link_pag a:hover {
   background: url("images/pagination-left-hover.png") no-repeat center;
 }
+body.blog .pagination .left_link_pag span.notactive {
+  cursor: default;
+  display: block;
+  line-height: 85px;
+  width: 28px;
+  height: 85px;
+  font-size: 0;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background: url("images/pagination-left-hover.png") no-repeat center;
+}
 body.blog .pagination .right_link_pag a {
   display: block;
   line-height: 85px;
@@ -3261,6 +3280,20 @@ body.blog .pagination .right_link_pag a {
   transition: background 0.3s ease;
 }
 body.blog .pagination .right_link_pag a:hover {
+  background: url("images/pagination-right-hover.png") no-repeat center;
+}
+body.blog .pagination .right_link_pag span.notactive {
+  cursor: default;
+  display: block;
+  line-height: 85px;
+  width: 28px;
+  height: 85px;
+  font-size: 0;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   background: url("images/pagination-right-hover.png") no-repeat center;
 }
 body.blog .pagination .left {

@@ -580,7 +580,7 @@ body.all {
     }
 
     /* */
-    .breadcrumb {
+    .breadcrumb, .breadcrumbs {
       text-align: center;
       padding: 25px 0;
 
@@ -2917,6 +2917,16 @@ body.blog {
           background: url("images/pagination-left-hover.png") no-repeat center;
         }
       }
+      span.notactive {
+        cursor: default;
+        display: block;
+        line-height: 85px;
+        width: 28px;
+        height: 85px;
+        font-size: 0;
+        .transition(background .3s ease);
+        background: url("images/pagination-left-hover.png") no-repeat center;
+      }
     }
     .right_link_pag {
       a {
@@ -2932,6 +2942,16 @@ body.blog {
         &:hover {
           background: url("images/pagination-right-hover.png") no-repeat center;
         }
+      }
+      span.notactive {
+        cursor: default;
+        display: block;
+        line-height: 85px;
+        width: 28px;
+        height: 85px;
+        font-size: 0;
+        .transition(background .3s ease);
+        background: url("images/pagination-right-hover.png") no-repeat center;
       }
     }
 

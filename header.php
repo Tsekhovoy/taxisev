@@ -12,6 +12,7 @@
     <?php
       if(is_page_template('page-home.php')){ body_class('home');}
       if (is_page_template ('template-contact.php')){ body_class('contact all');}
+      if (is_post_type_archive('services')){ body_class('services all');}
       if (is_blog()) { body_class('blog all');}
          else {
         body_class();

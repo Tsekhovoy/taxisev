@@ -380,6 +380,14 @@ function aletheme_get_options() {
                             'image_2' => $imagepath.'/2cl.png',
                             'image_3' => $imagepath.'/2cr.png', ),
         );
+    $options[] = array("name" => "Services",
+                       "type" => "heading");
+
+    $options[] = array( "name" => "Services Description",
+                        "desc" => "Insert the description",
+                        "id" => "ale_service_description",
+                        "std" => "",
+                        "type" => "editor");
 	
 	return $options;
 }
@@ -985,6 +993,15 @@ function aletheme_get_images_sizes() {
                 'height'    => 9999,
                 'crop'      => false,
             ),
+        ),
+        'services' => array(
+            array(
+                'name'      => 'services-mini',
+                'width'     => 240,
+                'height'    => 240,
+                'crop'      => true,
+            ),
+
         ),
         'post' => array(
             array(
