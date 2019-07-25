@@ -454,6 +454,66 @@ function aletheme_metaboxes($meta_boxes) {
     );
 
     $meta_boxes[] = array(
+        'id'         => 'contact_page_metabox',
+        'title'      => 'Contact Meta Options',
+        'pages'      => array( 'page', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'First Title',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_one',
+                'std'  => 'Taxi',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Second Title',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_two',
+                'std'  => 'Press',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Address Title',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_address',
+                'std'  => 'Our address',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Address Site',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'site_address',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Phone Title',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_phone',
+                'std'  => 'Phone for clients',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Phone Site',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'site_phone',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Title Form Text',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_form',
+                'std'  => 'Contact with us',
+                'type' => 'text',
+            ),
+        )
+    );
+
+    $meta_boxes[] = array(
         'id'         => 'press_page_metabox',
         'title'      => 'Press Page Options',
         'pages'      => array( 'page', ), // Post type

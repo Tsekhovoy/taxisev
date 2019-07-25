@@ -8,7 +8,15 @@
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
 </head>
-<body <?php if(is_page_template('page-home.php')){ body_class('home');} if (is_blog()) { body_class('blog all');} else {body_class();} ?> >
+<body
+    <?php
+      if(is_page_template('page-home.php')){ body_class('home');}
+      if (is_page_template ('template-contact.php')){ body_class('contact all');}
+      if (is_blog()) { body_class('blog all');}
+         else {
+        body_class();
+        } ?>
+>
 
 <!-- Orange & Black -->
 <div class="background">
